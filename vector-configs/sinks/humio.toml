@@ -4,6 +4,7 @@
   inputs = ["log_json"]
   compression = "gzip"
   host_key = "fly.app.instance"
+  endpoint = "https://cloud.community.humio.com"
   token = "${HUMIO_TOKEN}"
 
   # Encoding

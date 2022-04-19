@@ -9,8 +9,11 @@ data_dir = "/var/lib/vector/"
 
 [sources.fly_socket]
   type = "socket"
-  mode = "unix" 
+  mode = "unix"
   path = "/var/run/vector.sock"
+
+[sources.fly_socket.decoding]
+  codec = "json"
 
 [transforms.log_json]
   type = "remap"
